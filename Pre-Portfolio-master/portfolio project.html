@@ -21,11 +21,8 @@
     color: #fff;
     padding: 15px;
     text-align: center;
-	opacity: 0;
-	animation: slideTop 1s ease forwards;
-	animation-delay: 1.6s;
-
   }
+
   html{
 	scroll-behavior: smooth;
 	
@@ -60,6 +57,7 @@
 	animation: slideTop 3s ease forwards;
 	animation-delay: calc(.1s * var(--i));
   }
+
   .search-box {
     display: inline-block;
     margin: 10px;
@@ -200,19 +198,12 @@
 	}
   }
   
-  
-  /* Apply animation to your element */
-  .your-element {
-	opacity: 0;
-	animation: slideTop 1s ease forwards;
-	animation-delay: 1.6s;
-  }
-  
+ 
   main {
     padding: 20px;
     text-align: center;
     background-color: #f5f5f5;
-	background-image: url("images/gameofthrones.jpg");
+	background-image: url("images/gameofthroness.png");
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -229,24 +220,15 @@
 	max-height: 100%;
   }
 
-  .welcome-image2{
-	width: 100%; /* Make the image take the full width of the container */
-	max-width: 400px; /* Set a maximum width for the image */
-	margin-right: 20px; /* Add a margin for spacing */
-	align-self: flex-start; /* Align the image to the left of the container */
-  }
-
-  
-  
   /* Styles for .main-content with glassmorphism effect and positioned on the left */
 .main-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 400px;
+	max-width: 500px;
 	margin: 6rem 0 0 2rem; /* Margin-top of 6rem, margin-left of 2rem */
-	margin-left: 13rem;
-	margin-top: 7.5rem;
+	margin-left: 23rem;
+	margin-top: 8rem;
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(10px);
@@ -417,11 +399,11 @@
 	opacity: 1;
   }
   .container_two {
-	position: relative; /* Changed to relative positioning */
+	position: relative; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 20px; /* Added margin-top for spacing */
+	margin-top: 20px; 
   }
   
   .btn_two {
@@ -433,6 +415,8 @@
 	border: 1px solid rgb(146, 148, 248);
 	position: relative;
 	overflow: hidden;
+	gap: 20px;
+	color: #fff;
 	opacity: 0;
 	animation: slideRight 1s ease forwards;
 	animation-delay: 1.6s;
@@ -440,7 +424,7 @@
   
   .btn_two:hover {
 	box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
-	transform: translateY(-5px); /* Move button slightly up on hover */
+	transform: translateY(-5px); 
   }
   
   .btn_two:before {
@@ -481,73 +465,35 @@
 	.btn_two {
 	  font-size: 0.9rem;
 	  padding: 0.8rem 2rem;
+	  color: #000;
 	}
   }
   
-  .slider {
-    position: relative;
-    padding: 150px 0 50px 0;
-    background-color: var(--bg-color1);
-}
-
-.slider-content {
-  align-items: center !important;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.slider-general {
-  flex: 0 0 auto;
-  width: 60%;
-}
-
-/* Slider Left Content */
-
-.slider-general .welcome-msg {
-  font-family: 'Poppins', sans-serif;
-  color: var(--color1);
-  font-weight: 500;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.welcome-text h1 {
-  display: inline;
-}
-
-.slider-general p {
-  line-height: 30px;
-  padding-right: 26%;
-  font-family: 'Poppins', sans-serif;
-  color: var(--color1);
-}
-.slider-image {
-    flex: 0 0 auto;
-    width: 40%;
-}
-
-.welcome-image2 img {
-    max-height: 500px;
-    width: 100%;
-    object-fit: cover;
-    vertical-align: middle;
-}
-
-.slider-image .welcome-image2 {
-    position: relative;
-    z-index: 2;
-    transition-duration: 0.4s;
-}
+  
 
 .welcome-text {
 	font-weight: 700;
 	font-size: 4rem;
-	margin-top: 2rem;
+	margin-top: -8rem;
 	opacity: 0;
 	animation: slideBottom 1s ease forwards;
 	animation-delay: 1.6s;
 }
+
+@media screen and (max-width: 768px) {
+	.main-content {
+	  max-width: 80%;
+	  margin: 3rem auto;
+	  margin-top: 4rem;
+	  color: #000;
+	}
+  
+	.welcome-text {
+	  font-size: 2rem;
+	  margin-top: 1rem;
+	  color: #000;
+	}
+  }
   
 </style>
 </head>
@@ -555,15 +501,11 @@
     <nav>
       <div class="logo">
         <a href="#" style="font-weight: 900; font-size: 2.5rem; font-family: Montserrat; color: #eef1f6; text-decoration: none;">Movie Rec.</a>
-        <a href="#">Home</a>
+        <a href="#" >Home</a>
         <a href="#trending-movies" id="trending-link">Trending Movies</a>
         <a href="#Genres" id="Genres-link">Genres</a>
         <a href="#users-favorites" id="favorites-link">Users Favorites</a>
         <input type="text" class="search-box" placeholder="Search Genre...">
-        <div class="container_two">
-          <a href="#" class="btn_two">Sign in</a>
-          <a href="#" class="btn_two">Sign up</a>
-        </div>
       </div>
     </nav>
   </header>
@@ -574,9 +516,14 @@
       <h1 style="font-size: 5rem; font-weight: 700; color: white; margin-top: 10rem;">
         Welcome to Your Movie Adventure!
       </h1>
+	  
       <div class="main-content">
         <p>This is a site for lovers of movies! You can search for movies based on genres and get suggestions for movies with similar genres.</p>
-      </div>
+		<div class="container_two">
+			<a href="#" class="btn_two">Sign in</a>
+			<a href="#" class="btn_two">Sign up</a>
+		  </div>
+	</div>
     </div>
   </main>
 
@@ -584,7 +531,7 @@
       <header class="headings">
         <h1>Trending Movies</h1>
         <h3>Discover the Latest Blockbusters: Trending Movies That Are Taking the Spotlight!</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p> Uncover handpicked movie recommendations tailored just for you. Dive into a world of personalized<br> cinema choices that match your tastes and preferences, guiding you through an unforgettable<br> movie-watching experience.</p>
       </header>
       <div class="welcome-image">
         <img src="images/MOVIE3Asset.png" alt="">
@@ -594,8 +541,8 @@
 <section class="services" id="Genres">
 	<header class="headings">
 		<h1>Genres</h1>
-		<h3>Discover the Latest Blockbusters: Trending Movies That Are Taking the Spotlight!</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<h3>Explore Cinematic Diversity: Delve into a vast array of movie genres that cater to every mood and interest. </h3>
+		<p>From action-packed adventures to heartwarming romances, our curated genres offer something for everyone,<br> ensuring you find the perfect movie to match your mood.</p>
 	</header>
 
 	<div class="services-container">
@@ -669,14 +616,13 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			<h3>Search</h3>
 		</div>
-	    </div>
 	</div>
 
 	<section id="users-favorites" class="animate">
 	<header class="headings">
 		<h1>Users Favorites</h1>
 		<h3>Curated Selection: Explore Users' Favorites for the Best Picks!</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<p> Dive into a curated collection of users' favorite movies, handpicked to provide you with the best<br> cinematic experiences. Discover hidden gems and popular choices that resonate with fellow <br>movie enthusiasts, making your movie journey even more exciting.</p>
 	</header>
 	<div class="container">
 		<div class="card">
