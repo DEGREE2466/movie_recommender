@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Movie Rec</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 <style>
 	*{
@@ -21,9 +22,7 @@
     color: #fff;
     padding: 15px;
     text-align: center;
-	opacity: 0;
-	animation: slideBottom 1s ease forwards;
-	animation-delay: 1.6s;
+	
   }
 
   html{
@@ -43,8 +42,10 @@
 	font-weight: 900;
 	animation: slideTop 2s ease forwards;
 	animation-delay: calc(.1s * var(--i));
-	
 }
+
+
+
 
   nav {
     background-color: #111;
@@ -385,9 +386,15 @@
 	color: white;
 	transition: all 0.5s;
   }
+  h1{
+	font-size: 5rem; 
+	font-weight: 700; 
+	color: white; 
+	margin-top: 10rem;
+  }
   
   h2 {
-	font-size: 24px;
+	font-size: 30px;
 	margin: 10px 0;
   }
   
@@ -476,69 +483,416 @@
 	  padding: 0.8rem 2rem;
 	  color: #000;
 	}
-  }
+}
   
-  
+/* Hide the navigation links by default */
+.nav-links {
+    display: none;
+}
+
+/* Style for the menu icon */
+.menu-icon {
+    display: none; /* Hide the menu icon by default */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+/* Show the navigation links when the menu icon is clicked */
+.show-nav .nav-links {
+    display: block;
+    /* Add your styling for the expanded navigation here */
+}
+
+/* Media query to show the menu icon only on smaller screens */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on smaller screens */
+    }
+
+    /* Hide the navigation links by default */
+nav a {
+    display: none;
+}
+
+/* Style for the menu icon */
+.menu-icon {
+    display: block; /* Hide the menu icon by default */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+	margin-left: 18rem;
+	margin-top: -6rem;
+}
+
+/* Show the navigation links when the menu icon is clicked */
+.show-nav .nav a {
+    display: block;
+    /* Add your styling for the expanded navigation here */
+}
+
+/* Media query to show the menu icon only on smaller screens */
+    }
+
 
 .welcome-text {
 	font-weight: 700;
-	font-size: 4rem;
+	font-size: 1rem;
 	margin-top: -8rem;
 	opacity: 0;
 	animation: slideBottom 1s ease forwards;
 	animation-delay: 1.6s;
 }
 
+section .footer{
+	left: 0;
+	bottom: 12px;
+	width: 100%;
+	padding-top: 80px;
+	background-color:#232222;
+	align-items: center;
+  }
+
+footer {
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+	margin: 0 30px;
+  }
+
+  
+  
+  @media (width < 620px) {
+	footer {
+	  flex-direction: column;
+	}
+
+	.legal {
+		font-size: 12px;
+		text-align: center;
+		align-items: center;
+		margin-left: 4rem;
+	  }
+  
+	footer.bottom {
+	  gap: 16px;
+	  flex-direction: column-reverse;
+	}
+  }
+  
+  footer > img {
+	margin-top: 10px;
+  }
+  
+  @media (width >= 620px) {
+	footer {
+	  margin: 0 auto;
+	  max-width: 600px;
+	  padding: 0;
+	  text-align: center;
+	  align-items: center;
+
+	}
+  }
+  
+  footer {
+	color: #a2b5cd;
+  }
+  
+  footer.top {
+	border-bottom: 2px solid #3a4f6a;
+	padding-bottom: 20px;
+  }
+  
+  footer.bottom {
+	padding: 20px 0;
+	justify-content: space-between;
+	
+	
+  }
+  
+  footer.top .links {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+  }
+  
+  .links > div {
+	display: grid;
+	gap: 10px;
+	margin-bottom: 30px;
+  }
+  
+  footer h2 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	color: #f7f7f7;
+  }
+  
+  .legal {
+	font-size: 12px;
+	text-align: center;
+	align-items: center;
+	margin-left: 7rem;
+  }
+  
+  .legal > a {
+	margin: 0 4px;
+  }
+  
+  .legal > span {
+	margin-right: 10px;
+
+  }
+  
+  footer.bottom .links {
+	display: flex;
+	gap: 18px;
+  }
+  
+  footer.bottom .links > a {
+	font-size: 24px;
+  }
+  
+  @media (width < 420px) {
+	footer {
+	  text-align: center;
+	  align-items: center;
+	}
+  
+	footer.top .links {
+	  grid-template-columns: 1fr;
+	}
+  
+	footer.bottom {
+	  align-items: center;
+	}
+
+	.legal {
+		font-size: 12px;
+		text-align: center;
+		align-items: center;
+		margin-left: -1rem;
+	  }
+  
+	.legal > span {
+	  display: block;
+	  margin-right: 0;
+	  margin-bottom: 2px;
+	}
+  }
+
 @media screen and (max-width: 768px) {
 	.main-content {
 	  max-width: 80%;
-	  margin: 3rem auto;
-	  margin-top: 4rem;
-	  color: #000;
+	  margin: 2rem auto;
+	  margin-top: 10rem;
+	  color: #fff;
+	  font-size: 1.5rem;
 	}
   
-	.welcome-text {
-	  font-size: 2rem;
-	  margin-top: 1rem;
-	  color: #000;
+	h1{
+		font-size: 1.5rem; 
+		font-weight: 700; 
+		color: white; 
+		margin-top: 13rem;
+	  }
+	  main{
+		background-color: black
+	  }
+	  .welcome-image img {
+		max-width: 100%;
+		}
 	}
-  }
+
+	@media screen and (max-width: 462px) {
+		.main-content {
+			max-width: 80%;
+			margin: 2rem auto;
+			margin-top: 10rem;
+			color: #fff;
+			font-size: 1.5rem;
+		  }
+		
+		  h1{
+			  font-size: 1.5rem; 
+			  font-weight: 700; 
+			  color: white; 
+			  margin-top: 10rem;
+			}
+			main{
+			  background-color: black
+			}
+			.welcome-text {
+				font-weight: 700;
+				font-size: 1rem;
+				margin-top: -8rem;
+				opacity: 0;
+				animation: slideBottom 1s ease forwards;
+				animation-delay: 1.6s;
+			}
+			.btn_two {
+				font-size: 0.9rem;
+				padding: 0.8rem 2rem;
+				color: #fff;
+			}
+			.menu-icon {
+				display: block; /* Hide the menu icon by default */
+				cursor: pointer; /* Change cursor to indicate it's clickable */
+				margin-left: 23rem;
+			}
+		  }
+
+		  /*   === Screen Size 600px or Smaller  ===   */
+@media(max-width: 600px){
+	.main-content {
+		max-width: 80%;
+		margin: 2rem auto;
+		margin-top: 19rem;
+		color: #fff;
+		font-size: 1.5rem;
+	  }
+	
+	  h1{
+		  font-size: 1.5rem; 
+		  font-weight: 700; 
+		  color: white; 
+	
+		}
+		main{
+		  background-color: black
+		}
+		.welcome-text {
+			font-weight: 700;
+			font-size: 1rem;
+			margin-top: -2rem;
+			opacity: 0;
+			animation: slideBottom 1s ease forwards;
+			animation-delay: 1.6s;
+		}
+		
+		.btn_two {
+			font-size: 0.9rem;
+			padding: 0.8rem 2rem;
+			color: #fff;
+		}
+	}
+
+/*   === Screen Size 550px or Smaller  ===   */
+@media(max-width: 550px){
+	.main-content {
+		max-width: 80%;
+		margin: 2rem auto;
+		margin-top: 7rem;
+		color: #fff;
+		font-size: 1.5rem;
+	  }
+	
+	  h1{
+		  font-size: 1.5rem; 
+		  font-weight: 700; 
+		  color: white; 
+	
+		}
+		main{
+		  background-color: black
+		}
+		.welcome-text {
+			font-weight: 700;
+			font-size: 1rem;
+			margin-top: -2rem;
+			opacity: 0;
+			animation: slideBottom 1s ease forwards;
+			animation-delay: 1.6s;
+		}
+		
+		.btn_two {
+			font-size: 0.9rem;
+			padding: 0.8rem 2rem;
+			color: #fff;
+		}
+	}
+
+/*   === Screen Size 350px or Smaller  ===   */
+@media screen and (max-width: 360px) {
+	.main-content {
+		max-width: 80%;
+		margin: 2rem auto;
+		margin-top: 10rem;
+		color: #fff;
+		font-size: 1.5rem;
+	  }
+	
+	  h1{
+		  font-size: 1.5rem; 
+		  font-weight: 700; 
+		  color: white; 
+		  margin-top: 10rem;
+		}
+		main{
+		  background-color: black
+		}
+		.welcome-text {
+			font-weight: 700;
+			font-size: 1rem;
+			margin-top: -8rem;
+			opacity: 0;
+			animation: slideBottom 1s ease forwards;
+			animation-delay: 1.6s;
+		}
+		.btn_two {
+			font-size: 0.9rem;
+			padding: 0.8rem 2rem;
+			color: #fff;
+		}
+		.menu-icon {
+			display: block; /* Hide the menu icon by default */
+			cursor: pointer; /* Change cursor to indicate it's clickable */
+			margin-left: 23rem;
+		}
+	  }
+
+/*   *** Media Query Ends ***   */
   
 </style>
 </head>
 <header>
+	<div class="logo">
+        <a href="#" style="font-weight: 800; font-size: 2.5rem; font-family: Montserrat; color: #eef1f6; text-decoration: none;">Movie Rec.</a>
     <nav>
-      <div class="logo">
-        <a href="#" style="font-weight: 900; font-size: 2.5rem; font-family: Montserrat; color: #eef1f6; text-decoration: none;">Movie Rec.</a>
+      
+		<div class="nav-links"></div>
         <a href="#" >Home</a>
         <a href="#trending-movies" id="trending-link">Trending Movies</a>
         <a href="#Genres" id="Genres-link">Genres</a>
         <a href="#users-favorites" id="favorites-link">Users Favorites</a>
         <input type="text" class="search-box" placeholder="Search Genre...">
       </div>
+	  <div class="menu-icon">
+        <div class="bx bx-menu" id="menu-icon"></div>
+		<div class="nav-links">
+			</div>
+    </div>
     </nav>
   </header>
 
 <body>
   <main>
     <div class="welcome-text">
-      <h1 style="font-size: 5rem; font-weight: 700; color: white; margin-top: 10rem;">
+      <h1>
         Welcome to Your Movie Adventure!
       </h1>
 	  
       <div class="main-content">
         <p>This is a site for lovers of movies! You can search for movies based on genres and get suggestions for movies with similar genres.</p>
-		<div class="container_two">
-			<a href="#" class="btn_two">Sign in</a>
-			<a href="#" class="btn_two">Sign up</a>
-		  </div>
-	</div>
+			<div class="container_two">
+				<a href="#" class="btn_two">Sign in</a>
+				<a href="#" class="btn_two">Sign up</a>
+			</div>
+		</div>
     </div>
   </main>
 
     <section id="trending-movies" class="animate">
       <header class="headings">
-        <h1>Trending Movies</h1>
+        <h2>Trending Movies</h2>
         <h3>Discover the Latest Blockbusters: Trending Movies That Are Taking the Spotlight!</h3>
         <p> Uncover handpicked movie recommendations tailored just for you. Dive into a world of personalized<br> cinema choices that match your tastes and preferences, guiding you through an unforgettable<br> movie-watching experience.</p>
       </header>
@@ -549,7 +903,7 @@
 
 <section class="services" id="Genres">
 	<header class="headings">
-		<h1>Genres</h1>
+		<h2>Genres</h2>
 		<h3>Explore Cinematic Diversity: Delve into a vast array of movie genres that cater to every mood and interest. </h3>
 		<p>From action-packed adventures to heartwarming romances, our curated genres offer something for everyone,<br> ensuring you find the perfect movie to match your mood.</p>
 	</header>
@@ -629,39 +983,88 @@
 
 	<section id="users-favorites" class="animate">
 	<header class="headings">
-		<h1>Users Favorites</h1>
+		<h2>Users Favorites</h2>
 		<h3>Curated Selection: Explore Users' Favorites for the Best Picks!</h3>
 		<p> Dive into a curated collection of users' favorite movies, handpicked to provide you with the best<br> cinematic experiences. Discover hidden gems and popular choices that resonate with fellow <br>movie enthusiasts, making your movie journey even more exciting.</p>
 	</header>
 	<div class="container">
 		<div class="card">
-			<img src="images/mission.jpeg" alt="">
+			<img src="images/fast10.jpg" alt="">
 			<div class="intro">
-				<h2>Mission : Impossible</h2>
+				<h3>Fast & Furious</h3>
 				<p>The <span>Movie</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat ut tempore? Veritatis odio quo sit nihil. Fuga eos quisquam quis doloremque, maiores, officiis, atque aliquam est nostrum quos officia.</p>
 			</div>
 		</div>
 
 		<div class="container">
 			<div class="card">
-				<img src="images/mario.jpg" alt="">
+				<img src="images/mission.jpeg" alt="">
 				<div class="intro">
-					<h2>Super Mario Bros</h2>
+					<h3>Mission: Impossible</h3>
 					<p>The <span>Movie</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat ut tempore? Veritatis odio quo sit nihil. Fuga eos quisquam quis doloremque, maiores, officiis, atque aliquam est nostrum quos officia.</p>
 				</div>
 			</div>
 
 	<div class="container">
 		<div class="card">
-			<img src="images/guardian.jpg" alt="">
+			<img src="images/wakanda.jpg" alt="">
 			<div class="intro">
-				<h2>Guardians Of The Galaxy Vol.3</h2>
+				<h3>Black Panther</h3>
 				<p>The <span>Movie</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat ut tempore? Veritatis odio quo sit nihil. Fuga eos quisquam quis doloremque, maiores, officiis, atque aliquam est nostrum quos officia.</p>
 			</div>
 		</div>
 	</div>
-  
+
+	
+	</div>
+
+	
+	<section id="footer" class="footer">
+		<footer class="top">
+			<a href="#" style="font-weight: 800; font-size: 2.5rem; font-family: Montserrat; color: #eef1f6; text-decoration: none;">Movie Rec.</a>
+			<div class="links">
+				<div>
+					<h2>Explore</h2>
+					<a href="#" style="text-decoration: none; color: white; cursor: pointer;">Home</a>
+					<a href="#trending-movies" id="trending-link" style="text-decoration: none; color: white; cursor: pointer;">Trending Movies</a>
+					<a href="#Genres" id="Genres-link" style="text-decoration: none; color: white; cursor: pointer;">Genres</a>
+					<a href="#users-favorites" id="favorites-link" style="text-decoration: none; color: white; cursor: pointer;">Users Favorites</a>
+				</div>
+				<div>
+					<h2 style="color: white;">About Us</h2>
+					<a href="#" style="text-decoration: none; color: white; cursor: pointer;">About the Website</a>
+					<a href="#" style="text-decoration: none; color: white; cursor: pointer;">Contact Us</a>
+					<a href="#" style="text-decoration: none; color: white; cursor: pointer;">Privacy Policy</a>
+					<a href="#" style="text-decoration: none; color: white; cursor: pointer;">Terms of Service</a>
+				</div>
+			</div>
+		</footer>
+		<footer class="bottom">
+			<div class="legal">
+				<span>© 2023 All rights reserved</span>
+				<a>License</a>
+				<a>Terms</a>
+				<a>Privacy</a>
+			</div>
+			<div class="links">
+				<a class="fa-brands fa-github"></a>
+				<a class="fa-brands fa-linkedin"></a>
+				<a class="fa-brands fa-docker"></a>
+			</div>
+		</footer>
+	</section>
+	
   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#menu-icon").click(function() {
+        $(".nav a").toggleClass("show-nav");
+    });
+});
+</script>
+
+
   
 </body>
 </html>

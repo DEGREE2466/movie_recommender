@@ -1,3 +1,4 @@
+
 const sections = document.querySelectorAll(".animate");
 
 function checkSectionInView() {
