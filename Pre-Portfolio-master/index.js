@@ -31,6 +31,9 @@ let currPage = localStorage.getItem("currentPage");
 let currentPage;
 let getBackBtn1 = document.querySelector("#back-btn");
 
+let api_key = "5bc61b6bb6be8659b76261c169094ea9";
+let genre_id = sessionStorage.getItem("genre_id");
+
 
 getBackBtn1.style.visibility = "hidden";
 
@@ -72,7 +75,13 @@ makePage = {
         // We are making a request to our movie api (kinda stored the value in a file, but if you change in to our movie api it will still work) using the await keyword
         // We are able to use await because this is an asynchronous function
         // the await keyword means it waits till the request is done because we are making a request which can take time to repond
-        const request = await fetch("./data/data_horror.json");
+
+        //const request = await fetch("./data/data_horror.json");
+
+        let url = `https://api.themoviedb.org/3/discover/movie?api_key=${api_key}&with_genres=${genre_id}`;
+
+        const request = await fetch(url);
+
         const response = await request.json(); //this give us our response in json format
 
         // Our returned json (key, value pair file) formatted response has a key named "results" which has a value that is a list #check our json file for confirmation
@@ -119,7 +128,7 @@ makePage = {
 
         if (wrapper) { // This check if our wrapper (the div to house our Movie Titles to display on each page) is not empty, if it's not it makes it empty. This is because on every page we need an empty wrapper, this ensure our movie list doesn't stay on top of each other
 
-            wrapper.innerHTML = ""; 
+            wrapper.innerHTML = "";
         };
 
         // This decrements our current page value, you will see the reason later on.
@@ -204,7 +213,7 @@ makePage = {
             getNextBtn.addEventListener("click", ()=> {
 
                 // same for this but the opposite for the Next button
-                if (currentPage < getNumOfPage) { // if it's < the number of our pages this increments it
+                if (currentPage < page) { // if it's < the number of our pages this increments it
                     currentPage++;
                 };
 
