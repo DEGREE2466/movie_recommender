@@ -36,10 +36,13 @@ To set up the project locally, follow these steps:
 3. Use the search feature to find movies related to specific keywords or genres.
 4. Enjoy discovering new movies to watch based on your preferences.
 
+## Contributors
+
+- [Ndefo Afam](https://github.com/NdefoAfam).
+- [Uzochukwu Godwin](https://github.com/UzochukwuGodwin).
+
 ## Contributing
 
-Ndefo Afam.
-Uzochukwu Godwin.
 Contributions are welcome! If you have any suggestions, bug fixes, or improvements, feel free to submit a pull request. Please follow the [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
 ## License
