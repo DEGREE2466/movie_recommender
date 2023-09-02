@@ -38,8 +38,8 @@ To set up the project locally, follow these steps:
 
 ## Contributing
 
-Ndefo Afam
-Uzochukwu Godwin
+Ndefo Afam.
+Uzochukwu Godwin.
 Contributions are welcome! If you have any suggestions, bug fixes, or improvements, feel free to submit a pull request. Please follow the [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
 ## License
