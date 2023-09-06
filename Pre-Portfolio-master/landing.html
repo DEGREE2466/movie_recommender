@@ -30,6 +30,7 @@
 	scroll-behavior: smooth;
 }
 
+
 .logo {
 	font-weight: 900;
 	animation: slideTop 2s ease forwards;
@@ -78,7 +79,7 @@
 	  transform: translateX(0);
 	}
   }
-  
+ 
 .card {
     display: grid;
 	height: auto;
@@ -88,6 +89,7 @@
 	overflow: hidden;
 	box-shadow: 5px 5px 20px black;
 	position: relative;
+	margin-top: 3rem;
 	opacity: 0;
 	animation: slideBottom 1s ease forwards;
 	animation-delay: 1.6s;
@@ -147,6 +149,10 @@
 	opacity: 1;
   }
 
+  .hide {
+	visibility: hidden;
+  }
+
  
 
 section .footer{
@@ -169,99 +175,150 @@ section .footer{
     margin-top: 4rem;
   }
 
-@media screen and (max-width: 768px) {
-	.main-content {
-	  max-width: 80%;
-	  margin: 2rem auto;
-	  margin-top: 10rem;
-	  color: #fff;
-	  font-size: 1.5rem;
-	}
-  
-	h1{
-		font-size: 1.5rem; 
-		font-weight: 700; 
-		color: white; 
-		margin-top: 13rem;
-	  }
-	  main{
-		background-color: black
-	  }
-	  .welcome-image img {
-		max-width: 100%;
-		}
-
-        footer {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            margin: 0 30px;
-            color: #fff;
-            font-size: 0.8rem;
-            margin-left: 3.5rem;
-          }
-	}
-
+  .btn, .nav-btn {
+    width: 20px;
+    color: #000;
+    font-size: 18px;
 	
-/*   *** Media Query Ends ***   */
+}
+button {
+    margin: 0; /* Reset margin */
+    display: inline-block; /* Display buttons inline */
+    margin-right: 1rem; /* Add some horizontal spacing between buttons */
+	margin-left: 9rem;
+}
+
+
+   .search-box{
+	margin-left: 35rem;
+	margin-top: 6rem;
+  }
+
   
+  
+/* Default styles for larger screens */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjust your styles for smaller screens here */
+
+	body {
+		font-size: 1.2rem;
+	  }
+   
+
+	.search-box{
+		margin-left: 5.5rem;
+		margin-top: 6rem;
+		width: 50%;
+	  }
+    /* Adjust the card layout for smaller screens */
+    .container {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    /* Adjust the buttons to display vertically */
+    #container #paginate {
+        margin: 10px auto;
+    }
+
+	.btn, .nav-btn {
+		width: 20px;
+		color: #000;
+		font-size: 18px;
+	
+	}
+
+	button {
+		margin: 0;
+		display: inline-block;
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+    /* Adjust other styles as needed for smaller screens */
+}
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    font-size: 0.5rem;
+  }
+
+/*   *** Media Query Ends ***   */
+
+@media only screen and (max-width: 600px) {
+	body {
+
+	}
+  }
+.active {
+	color: orange;
+}
+
 </style>
 </head>
 <header>
 	<div class="logo">
-        <a href="#" style="font-weight: 800; font-size: 2.5rem; font-family: Montserrat; color: #eef1f6; text-decoration: none;">Movie Rec.</a>
+        <a href="portfolio project.html" style="font-weight: 800; font-size: 2.5rem; font-family: Montserrat; color: #eef1f6; text-decoration: none;">Movie Rec.</a>
     
   </header>
 
 <body>
+	<input type="text" class="search-box" placeholder="Search Genre...">
   
 	<section id="users-favorites" class="animate">
 	
-	<div class="container">
-		<div class="card">
-			<img src="images/indiana_jones.png" alt="">
-			<div class="intro">
-				<h3> Indiana Jones and the Dial of Destiny</h3>
-				<p>Daredevil archaeologist Jones races against time to retrieve a legendary dial that can change the course of history</p>
-			</div>
-		</div>
-
-		<div class="container">
+		<div class="container" title="See in TMDB">
 			<div class="card">
-				<img src="images/heart_of_stone.png" alt="">
+				<img src="" alt="">
 				<div class="intro">
-					<h3>Heart of Stone</h3>
-					<p>The <span>Movie</span>Rachel Stone, a female intelligence operative, guards her global peacekeeping organization's most crucial, perilous asset.</p>
+					<h3></h3><br>
+					<p></p>
 				</div>
 			</div>
 
-		<div class="container">
-			<div class="card">
-				<img src="images/the-meg-movie-poster.jpg" alt="">
-				<div class="intro">
-					<h3>Meg 2: The Trench</h3>
-					<p>Jonas Taylor's deep-sea mission goes awry when a mining operation and ancient sharks threaten survival.</p>
+			<div class="container" title="See in TMDB">
+				<div class="card">
+					<img src="" alt="">
+					<div class="intro">
+						<h3></h3><br>
+						<p></p>
+					</div>
 				</div>
+
+			<div class="container" title="See in TMDB">
+				<div class="card">
+					<img src="" alt="">
+					<div class="intro">
+						<h3></h3><br>
+						<p></p>
+					</div>
+				</div>
+				<div class="container" title="See in TMDB">
+					<div class="card">
+						<img src="" alt="">
+						<div class="intro">
+							<h3></h3><br>
+							<p></p>
+						</div>
+					</div>
+					<div class="container" title="See in TMDB">
+						<div class="card">
+							<img src="" alt="">
+							<div class="intro">
+								<h3></h3><br>
+								<p></p>
+							</div>
+						</div>
 			</div>
-            <div class="container">
-                <div class="card">
-                    <img src="images/transformer.jpg" alt="">
-                    <div class="intro">
-                        <h3>Transformers Rise of the Beasts</h3>
-                        <p>Optimus Prime and Autobots unite with the Maximals to thwart a planet-threatening menace.</p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="card">
-                        <img src="images/spiderman.jpg" alt="">
-                        <div class="intro">
-                            <h3>Spider Man Across The Spider Verse</h3>
-                            <p>Spider-Man reunites with Gwen Stacy, enters the Multiverse, teams up with others, and redefines heroism to save loved ones.</p>
-                        </div>
-                    </div>
 		</div>
-	</div>
 	</section>
+
+	<button id="btn-prev">&lt;</button>
+	<span id="paginate"></span>
+	<button id="btn-next">&gt;</button>
 
 	
 	
@@ -277,4 +334,5 @@ section .footer{
 	</section>
 	
 </body>
+<script src="index.js"></script>
 </html>

@@ -359,7 +359,7 @@ nav .nav-bar .logo a{
   main {
     padding: 20px;
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: black;
 	background-image: url("images/gameofthroness.png");
 	background-position: top;
 	background-repeat: no-repeat;
@@ -385,7 +385,7 @@ nav .nav-bar .logo a{
 	max-width: 500px;
 	margin: 6rem 0 0 2rem; /* Margin-top of 6rem, margin-left of 2rem */
 	margin-left: 23rem;
-	margin-top: 8rem;
+	margin-top: 6rem;
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(10px);
@@ -488,7 +488,7 @@ nav .nav-bar .logo a{
 	color: var(--primary-clr);
 }
 .services-container .service-box:hover.service-box h2{
-	color: var(--bg-clr-one);
+	color: #232222;
 }
 .services-container .service-box:hover.service-box p{
 	color: #aaa;
@@ -590,7 +590,7 @@ nav .nav-bar .logo a{
 	font-size: 5rem; 
 	font-weight: 700; 
 	color: white; 
-	margin-top: 10rem;
+	margin-top: 1rem;
   }
   
   h2 {
@@ -683,7 +683,6 @@ nav .nav-bar .logo a{
 	  padding: 0.8rem 2rem;
 	  color: #000;
 	}
-}
   
 /* Hide the navigation links by default */
 .nav-links {
@@ -695,7 +694,9 @@ nav .nav-bar .logo a{
     display: none; /* Hide the menu icon by default */
     cursor: pointer; /* Change cursor to indicate it's clickable */
 }
-
+.bx-menu:before {
+	font-size: 2.5rem;
+}
 /* Show the navigation links when the menu icon is clicked */
 .show-nav .nav-links {
     display: block;
@@ -703,7 +704,6 @@ nav .nav-bar .logo a{
 }
 
 /* Media query to show the menu icon only on smaller screens */
-@media (max-width: 768px) {
     .menu-icon {
         display: block; /* Show the menu icon on smaller screens */
     }
@@ -725,10 +725,6 @@ nav a {
 .show-nav .nav a {
     display: block;
 }
-
- }
-
-
 .welcome-text {
 	font-weight: 700;
 	font-size: 1rem;
@@ -754,7 +750,95 @@ footer {
 	margin: 0 30px;
   }
 
+  .main-content {
+	max-width: 80%;
+	margin: 2rem auto;
+	margin-top: 10rem;
+	color: #fff;
+	font-size: 1.5rem;
+  }
+
+  h1{
+	  font-size: 2rem; 
+	  font-weight: 700; 
+	  color: white; 
+	  margin-top: 12rem;
+	  max-width: 70%;
+	  margin-left: 3rem;
+	}
+
+	h2{
+	  font-size: 1.5rem
+	}
+
+	h3{
+	  font-size: 1rem; 
+	  font-weight: 700; 
+	  color: white; 
+	  max-width: 70%;
+	  margin-left: 4rem;
+	}
   
+	  p{
+		  max-width: 70%;
+		  margin-left: 4rem;
+		  font-size: 0.7rem;
+	  }
+	  
+	  
+	main{
+	  background-color: black
+	}
+	.welcome-image img {
+	  max-width: 100%;
+	  }
+	  .services-container .service-box {
+		  flex: 1;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+	  }
+  
+   #trending-movies .container {
+	  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  #trending-movies .card1 {
+	  max-width: 150px;
+  }
+  #trending-movies .container {
+	  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  #trending-movies .card1 {
+	  max-width: 150px;
+  }
+  .footer {
+	  max-width: 100%;
+	  
+	  }
+	  .legal {
+		  max-width: 100%;
+		  margin-left: 1rem;
+		  font-size: 0.6rem;
+	  }
+	  footer.top {
+		  border-bottom: 2px solid #3a4f6a;
+		  padding-bottom: 20px;
+		  margin-left: 1rem;
+		}
+		footer.top .links {
+		  display: grid;
+		  grid-template-columns: repeat(2, 1fr);
+		  gap: 30px;
+		  margin-left: 1rem;
+		  font-size: 0.6rem;
+		}
+		a {
+		  max-width: 100%;
+		  margin-left: 0rem;
+
+ }
+	}
   
   @media (width < 620px) {
 	footer {
@@ -876,99 +960,7 @@ footer {
 	  margin-bottom: 2px;
 	}
   }
-
-@media screen and (max-width: 768px) {
-	.main-content {
-	  max-width: 80%;
-	  margin: 2rem auto;
-	  margin-top: 10rem;
-	  color: #fff;
-	  font-size: 1.5rem;
-	}
-  
-	h1{
-		font-size: 1.7rem; 
-		font-weight: 700; 
-		color: white; 
-		margin-top: 12rem;
-		max-width: 70%;
-		margin-left: 3rem;
-	  }
-
-	  h2{
-		font-size: 1rem
-	  }
-
-	  h3{
-		font-size: 1rem; 
-		font-weight: 700; 
-		color: white; 
-		max-width: 70%;
-		margin-left: 4rem;
-	  }
 	
-		p{
-			max-width: 70%;
-			margin-left: 4rem;
-			font-size: 0.7rem;
-		}
-		
-		
-	  main{
-		background-color: black
-	  }
-	  .welcome-image img {
-		max-width: 100%;
-		}
-		.services-container .service-box {
-			flex: 1;
-			max-width: 100%;
-			margin-bottom: 20px;
-		}
-	
-	 #trending-movies .container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-
-    #trending-movies .card1 {
-        max-width: 150px;
-    }
-	#trending-movies .container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-
-    #trending-movies .card1 {
-        max-width: 150px;
-    }
-	.footer {
-		max-width: 100%;
-		
-		}
-		.legal {
-			max-width: 100%;
-			margin-left: 1rem;
-			font-size: 0.6rem;
-		}
-		footer.top {
-			border-bottom: 2px solid #3a4f6a;
-			padding-bottom: 20px;
-			margin-left: 1rem;
-		  }
-		  footer.top .links {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			gap: 30px;
-			margin-left: 1rem;
-			font-size: 0.6rem;
-		  }
-		  a {
-			max-width: 100%;
-			margin-left: 0rem;
-		  }
-
-}
-	
-
 	@media screen and (max-width: 462px) {
 		.main-content {
 			max-width: 80%;
@@ -979,7 +971,7 @@ footer {
 		  }
 		
 		  h1{
-			  font-size: 1.5rem; 
+			  font-size: 2rem; 
 			  font-weight: 700; 
 			  color: white; 
 			  margin-top: 10rem;
@@ -1018,7 +1010,7 @@ footer {
 	  }
 	
 	  h1{
-		  font-size: 1.5rem; 
+		  font-size: 2rem; 
 		  font-weight: 700; 
 		  color: white; 
 	
@@ -1047,15 +1039,16 @@ footer {
 	.main-content {
 		max-width: 80%;
 		margin: 2rem auto;
-		margin-top: 7rem;
+		margin-top: 3rem;
 		color: #fff;
 		font-size: 1.5rem;
 	  }
 	
 	  h1{
-		  font-size: 1.5rem; 
+		  font-size: 2rem; 
 		  font-weight: 700; 
 		  color: white; 
+		  margin-top: 15rem;
 	
 		}
 		main{
@@ -1135,9 +1128,9 @@ footer {
 	
 					<ul class="nav-links">
 						<li><a href="#">Home</a></li>
-						<li><a href="#trending-movies" id="trending-link">Trending</a></li>
+						<li><a href="#Selections" id="trending-link">Selections</a></li>
 						<li><a href="#Genres" id="Genres-link">Genres</a></li>
-						<li> <a href="#users-favorites" id="favorites-link">Favorites</a></li>
+						<li> <a href="#trending" id="favorites-link">Trending</a></li>
 						<li> <a href="#box-office-movies" id="box-office">Box Office</a></li>
 						<!---<li><a href="#">Contact</a></li>--->
 					</ul>
@@ -1158,18 +1151,18 @@ footer {
 	  
       <div class="main-content">
         <h2>This is a site for lovers of movies! You can search for movies based on genres and get suggestions for movies with similar genres.</h2>
-			<div class="container_two">
+			<!---<div class="container_two">
 				<a href="#" class="btn_two">Sign in</a>
 				<a href="#" class="btn_two">Sign up</a>
-			</div>
+			</div>-->
 		</div>
     </div>
   </main>
 
-    <section id="trending-movies" class="animate">
+    <section id="Selections" class="animate">
       <header class="headings">
-        <h2>Trending Movies</h2>
-        <h3>Discover the Latest Blockbusters: Trending Movies That Are Taking the Spotlight!</h3>
+        <h2>Selections</h2>
+        <h3>Discover the Latest Blockbusters: Mixed selections of Movies That Are Taking the Spotlight!</h3>
         <p> Uncover handpicked movie recommendations tailored just for you. Dive into a world of personalized<br> cinema choices that match your tastes and preferences, guiding you through an unforgettable<br> movie-watching experience.</p>
       
 		<div class="container">
@@ -1247,7 +1240,7 @@ footer {
 				<i class="fa-solid fa-code"></i>
 			</div>
 			<h2>Comedy</h2>
-			<p1> Laugh out loud with hilarious comedies. Enjoy witty humor, funny situations, and lighthearted entertainment. Comedy films are your ticket to smiles and laughter.</p1>
+			<p> Laugh out loud with hilarious comedies. Enjoy witty humor, funny situations, and lighthearted entertainment. Comedy films are your ticket to smiles and laughter.</p>
 		</div>
 
 		<div class="service-box">
@@ -1298,11 +1291,11 @@ footer {
 		</div>
 	</div>
 
-	<section id="users-favorites" class="animate">
+	<section id="trending" class="animate">
 	<header class="headings">
-		<h2>Users Favorites</h2>
-		<h3>Curated Selection: Explore Users' Favorites <br>for the Best Picks!</h3>
-		<p> Dive into a curated collection of users' favorite movies, handpicked to provide<br> you with the best cinematic experiences. Discover hidden gems and popular choices <br> that resonate with fellow movie enthusiasts, making your movie <br> journey even more exciting.</p>
+		<h2>Trending</h2>
+		<h3>Curated Selection: Explore Trending movies <br>for the Best Picks!</h3>
+		<p> Dive into a curated collection of trending movies, handpicked to provide<br> you with the best cinematic experiences. Discover hidden gems and popular choices <br> that resonate with fellow movie enthusiasts, making your movie <br> journey even more exciting.</p>
 	</header>
 	<div class="container">
 		<div class="card">
