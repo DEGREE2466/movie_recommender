@@ -1,5 +1,6 @@
 # Movie Recommender Website
 
+![README.md](https://github.com/NdefoAfam/movie_recommender/blob/main/Pre-Portfolio-master/images/medium-shot-woman-holding-remote.jpg)
 Welcome to the Movie Recommender Website repository! This is a website designed to provide movie enthusiasts with recommendations and suggestions for movies and movie genres they might enjoy. Please note that this website does not offer movies for download or streaming, but rather serves as a platform to help users discover new movies to watch.
 
 ## Table of Contents
@@ -14,6 +15,8 @@ Welcome to the Movie Recommender Website repository! This is a website designed 
 ## Introduction
 
 The Movie Recommender Website is built to cater to individuals who love movies and are looking for new films or genres to explore. Users can interact with the website to receive personalized movie recommendations based on their preferences.
+![README.md](https://github.com/NdefoAfam/movie_recommender/blob/main/Pre-Portfolio-master/images/artist-young-man-mad-beard.jpg)
+
 
 ## Features
 
