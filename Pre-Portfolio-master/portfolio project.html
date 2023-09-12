@@ -60,6 +60,7 @@ body.dark{
     --search-bar: #242526;
 }
 
+	/*   *** Navbar Styling Starts***   */
 nav{
     position: fixed;
     top: 0;
@@ -222,71 +223,7 @@ nav .nav-bar .logo a{
     border-radius: 4px;
   }
   
-  
-  .home{
-	display: flex;
-	align-items: center;
-	padding:0 6%;
-	background-color: var(--second-color);
-	margin-top: -6rem;
-}
-
-.home-content{
-	max-width: 100%;
-	margin-top: 4rem;
-	position: relative;
-}
-
-.home-content h1{
-	font-size: 3.7rem;
-	font-weight: 700;
-	line-height: 1.3;
-	max-width: fit-content;
-	opacity: 0;
-	animation: slideBottom 1s ease forwards;
-	animation-delay: 1s;
-}
-
-.hero .hero-image{
-	position: absolute;
-	width: 500px;
-	height: 900px;
-	background-color: var(--primary-light-clr);
-	border-bottom-left-radius: 250px;
-	border-bottom-right-radius: 250px;
-	transform: rotate(40deg);
-	right: -30px;
-	top: -220px;
-	overflow: hidden;
-	z-index: 0;
-}
-.hero .hero-image img{
-	position: absolute;
-	width: auto;
-	height: auto;
-	object-fit: cover;
-	transform: rotate(-40deg);
-	left: 20px;
-	bottom: 0px;
-}
-
-.home-imgHover{
-	position: absolute;
-	top: 5rem;
-	left: 50rem;
-	width: 52%;
-	height: 110%;
-	margin-left: 11rem;
-	background: transparent;
-	/*border: 2px solid red;*/
-	transition: 1.5s;
-}
-
-.home-imgHover:hover{
-	background: #1A2430;
-	opacity: .5;
-}
-
+  /*   *** Navbar Styling Ends ***   */
 
 .home-content p {
 	font-size: 1.6rem;
@@ -310,7 +247,7 @@ nav .nav-bar .logo a{
 	  animation-delay: 1.3s;
 }
 
-
+/*   *** Slide effects on loadging page starts***   */
 
   @keyframes slideTop {
 	from {
@@ -354,7 +291,7 @@ nav .nav-bar .logo a{
 	  transform: translateX(0);
 	}
   }
-  
+  /*   *** Slide effects on loadging page ends***   */
  
   main {
     padding: 20px;
@@ -365,18 +302,7 @@ nav .nav-bar .logo a{
 	background-repeat: no-repeat;
 	background-size: contain;
   }
-  .welcome-image {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-  }
   
-  .welcome-image img {
-	max-width: 100%;
-	max-height: 100%;
-  }
-
   /* Styles for .main-content with glassmorphism effect and positioned on the left */
 .main-content {
 	display: flex;
@@ -597,7 +523,7 @@ nav .nav-bar .logo a{
 	font-size: 30px;
 	margin: 10px 0;
   }
-  
+  /*   *** card hover effect starts***   */
   .card:hover {
 	cursor: pointer;
   }
@@ -611,6 +537,7 @@ nav .nav-bar .logo a{
 	visibility: visible;
 	opacity: 1;
   }
+	/*   *** card hover effect ends***   */
   .container_two {
 	position: relative; 
 	display: flex;
@@ -839,7 +766,8 @@ footer {
 
  }
 	}
-  
+
+	/*   *** Media Query starts ***   */
   @media (width < 620px) {
 	footer {
 	  flex-direction: column;
@@ -1114,7 +1042,7 @@ footer {
 </style>
 </head>
 <header>
-
+	<!---Navbar starts--->
 		<nav>
 			<div class="nav-bar">
 				<i class='bx bx-menu sidebarOpen' ></i>
@@ -1140,6 +1068,7 @@ footer {
 
 				</div>
     </nav>
+	<!---Navbar ends--->
   </header>
 
 <body>
@@ -1159,6 +1088,7 @@ footer {
     </div>
   </main>
 
+	<!---Selections section starts--->
     <section id="Selections" class="animate">
       <header class="headings">
         <h2>Selections</h2>
@@ -1217,8 +1147,9 @@ footer {
             			</div>
         		</div>
         </section>
-    
+    <!---Selections section ends--->
 
+<!---Genres section starts--->
 <section class="services" id="Genres">
 	<header class="headings">
 		<h2>Genres</h2>
@@ -1290,7 +1221,9 @@ footer {
 			<p>Embark on thrilling journeys to the unknown. Experience daring quests, exotic locales, and adrenaline-fueled escapades. Adventure movies promise excitement and exploration.</p>
 		</div>
 	</div>
+	<!---Genres section ends--->
 
+	<!---Trending section starts--->
 	<section id="trending" class="animate">
 	<header class="headings">
 		<h2>Trending</h2>
@@ -1326,7 +1259,9 @@ footer {
 		</div>
 	</div>
 	</section>
+	<!---Trending section ends--->
 
+	<!---Box Office Movies section starts--->
 	<section id="box-office-movies" class="box-office">
 		<header class="headings">
 		  <h2>Box Office Movies</h2>
@@ -1385,7 +1320,9 @@ footer {
 						  </div>
 				  </div>
 		  </section>
-
+			<!---Box Office Movies section starts--->
+					  
+			<!---footer section starts--->		  
 	<section id="footer" class="footer">
 		<footer class="top">
 			<a href="#" style="font-weight: 800; font-size: 2.5rem; font-family: Montserrat; color: #eef1f6; text-decoration: none;">Movie Rec.</a>
@@ -1420,7 +1357,8 @@ footer {
 			</div>
 		</footer>
 	</section>
-	
+	<!---footer section ends--->
+					  
   <script src="index1.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
