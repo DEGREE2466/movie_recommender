@@ -34,6 +34,7 @@ To set up the project locally, follow these steps:
 
 ## Usage
 
+![README.md](https://github.com/NdefoAfam/movie_recommender/blob/main/Pre-Portfolio-master/images/artist-young-man-mad-beard.jpg)(https://github.com/NdefoAfam/movie_recommender/blob/main/Pre-Portfolio-master/images/african-american-woman-holding-clapper-icon.jpg)
 1. Visit the website using a web browser.
 2. Explore the various genres and movie suggestions provided.
 3. Use the search feature to find movies related to specific keywords or genres.
