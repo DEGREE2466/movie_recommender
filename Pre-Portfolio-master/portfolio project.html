@@ -60,7 +60,7 @@ body.dark{
     --search-bar: #242526;
 }
 
-	/*   *** Navbar Styling Starts***   */
+ /*   *** Navbar Styling Starts ***   */
 nav{
     position: fixed;
     top: 0;
@@ -222,8 +222,7 @@ nav .nav-bar .logo a{
     border: 1px solid #ccc;
     border-radius: 4px;
   }
-  
-  /*   *** Navbar Styling Ends ***   */
+   /*   *** Navbar Styling Ends ***   */
 
 .home-content p {
 	font-size: 1.6rem;
@@ -247,7 +246,7 @@ nav .nav-bar .logo a{
 	  animation-delay: 1.3s;
 }
 
-/*   *** Slide effects on loadging page starts***   */
+ /*   *** Slide effects on loadging page starts***   */
 
   @keyframes slideTop {
 	from {
@@ -291,6 +290,7 @@ nav .nav-bar .logo a{
 	  transform: translateX(0);
 	}
   }
+  
   /*   *** Slide effects on loadging page ends***   */
  
   main {
@@ -303,6 +303,7 @@ nav .nav-bar .logo a{
 	background-size: contain;
   }
   
+
   /* Styles for .main-content with glassmorphism effect and positioned on the left */
 .main-content {
 	display: flex;
@@ -471,7 +472,7 @@ nav .nav-bar .logo a{
 	visibility: visible;
 	opacity: 1;
   }
-  
+  /*   ***card hover effect ends***   */
   .container {
 	display: flex;
 	justify-content: center;
@@ -523,7 +524,8 @@ nav .nav-bar .logo a{
 	font-size: 30px;
 	margin: 10px 0;
   }
-  /*   *** card hover effect starts***   */
+  
+  /*   *** Card hover effects starts***   */
   .card:hover {
 	cursor: pointer;
   }
@@ -537,7 +539,6 @@ nav .nav-bar .logo a{
 	visibility: visible;
 	opacity: 1;
   }
-	/*   *** card hover effect ends***   */
   .container_two {
 	position: relative; 
 	display: flex;
@@ -766,8 +767,7 @@ footer {
 
  }
 	}
-
-	/*   *** Media Query starts ***   */
+  
   @media (width < 620px) {
 	footer {
 	  flex-direction: column;
@@ -1073,6 +1073,7 @@ footer {
 
 <body>
   <main>
+	<!---landing main page starts starts--->
     <div class="welcome-text">
       <h1>
         Welcome to Your Movie Adventure!
@@ -1087,6 +1088,7 @@ footer {
 		</div>
     </div>
   </main>
+	<!---landing main page ends--->
 
 	<!---Selections section starts--->
     <section id="Selections" class="animate">
@@ -1320,9 +1322,9 @@ footer {
 						  </div>
 				  </div>
 		  </section>
-			<!---Box Office Movies section starts--->
-					  
-			<!---footer section starts--->		  
+		  <!---Box Office Movies section ends--->
+
+		  <!---footer section starts--->
 	<section id="footer" class="footer">
 		<footer class="top">
 			<a href="#" style="font-weight: 800; font-size: 2.5rem; font-family: Montserrat; color: #eef1f6; text-decoration: none;">Movie Rec.</a>
@@ -1358,7 +1360,7 @@ footer {
 		</footer>
 	</section>
 	<!---footer section ends--->
-					  
+
   <script src="index1.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
